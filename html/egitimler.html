@@ -6,6 +6,8 @@
         <title>ana sayfa</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
         <link rel="stylesheet" href="style.css">
         <style>
           .dropdown-item:hover {
@@ -22,12 +24,10 @@
         }
         .gradient-background {
         background: linear-gradient(#fc8c03 10%, #fff 23%, #fff 10%);
-        
-    }
-    
-           
+        }
     
       </style>
+
       </head>
       <body>
         
@@ -90,8 +90,132 @@
       </header>
     
     
-<!--Gövde-->
-<h1>eğitimler sayfası</h1>
+<!--Sidebar ve içerik-->
+<div class="d-flex">
+  
+  <!--Sidebar-->
+  <main class="flex-shrink-0 p-3" style="width: 280px; border: 1px solid #ddd; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); height: 100%;">
+
+<div class="b-example-divider b-example-vr"></div>
+<div class="flex-shrink-0 p-3" style="width: 280px;">
+  <a href="/html/egitimler.html" class="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom">
+    
+    <span class="fs-5 fw-semibold">Eğitim Videolarımız</span>
+  </a>
+  <ul class="list-unstyled ps-0">
+    <li class="mb-1">
+      <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+        <i class="fas fa-angle-right me-2"></i>Blockchain Eğitimleri   
+      </button>
+      <div class="collapse" id="home-collapse" style="">
+        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+          <li><a href="/html/videolar/blockchainegiris.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded" style="padding-left: 1.5rem;"><i class="fas fa-play-circle me-2"></i>Blockchain'e Giriş</a></li>
+          <li><a href="/html/videolar/bilgi.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded" style="padding-left: 1.5rem;"><i class="fas fa-play-circle me-2"></i>Bilgi(Gösterge) İşleme Giriş</a></li>
+          <li><a href="/html/videolar/consensus.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded" style="padding-left: 1.5rem;"><i class="fas fa-play-circle me-2"></i>Consensus Algoritmaları</a></li>
+          
+        </ul>
+      </div>
+    </li>
+    <li class="mb-1">
+      <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+        <i class="fas fa-angle-right me-2"></i>Frontend  Eğitimleri
+      </button>
+      <div class="collapse" id="dashboard-collapse" style="">
+        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+          <li><a href="/html/videolar/html.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded" style="padding-left: 1.5rem;"><i class="fas fa-play-circle me-2"></i>HTML</a></li>
+          <li><a href="/html/videolar/css.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded" style="padding-left: 1.5rem;"><i class="fas fa-play-circle me-2"></i>CSS</a></li>
+          
+   
+
+          <!------------JavaScript-------------->
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+            <i class="fas fa-angle-right me-2" style="padding-left: 1.5rem;"></i>JavaScript
+          </button>
+          <div class="collapse" id="account-collapse" style="">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="/html/videolar/jspages/js0.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded" style="padding-left: 50px;"><i class="fas fa-play-circle me-2"></i>JS-0</a></li>
+                  <li><a href="/html/videolar/jspages/js1.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded" style="padding-left: 50px;"><i class="fas fa-play-circle me-2"></i>JS-1</a></li>
+                  <li><a href="/html/videolar/jspages/js2.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded" style="padding-left: 50px;"><i class="fas fa-play-circle me-2"></i>JS-2</a></li>
+                  <li><a href="/html/videolar/jspages/js3.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded" style="padding-left: 50px;"><i class="fas fa-play-circle me-2"></i>JS-3</a></li>
+                  <li><a href="/html/videolar/jspages/js4.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded" style="padding-left: 50px;"><i class="fas fa-play-circle me-2"></i>JS-4</a></li>
+                  <li><a href="/html/videolar/jspages/js5.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded" style="padding-left: 50px;"><i class="fas fa-play-circle me-2"></i>JS-5</a></li>
+                  <li><a href="/html/videolar/jspages/js6.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded" style="padding-left: 50px;"><i class="fas fa-play-circle me-2"></i>JS-6</a></li>
+                  <li><a href="/html/videolar/jspages/js7.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded" style="padding-left: 50px;"><i class="fas fa-play-circle me-2"></i>JS-7</a></li>
+                  <li><a href="/html/videolar/jspages/js8.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded" style="padding-left: 50px;"><i class="fas fa-play-circle me-2"></i>JS-8</a></li>
+                  <li><a href="/html/videolar/jspages/js9.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded" style="padding-left: 50px;"><i class="fas fa-play-circle me-2"></i>JS-9</a></li>
+                  <li><a href="/html/videolar/jspages/js10.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded" style="padding-left: 50px;"><i class="fas fa-play-circle me-2"></i>JS-10</a></li>
+            </ul>
+          </div>
+        
+
+
+
+
+          <!------------------------------------>
+          
+        </ul>
+      </div>
+    </li>
+    <li class="mb-1">
+      <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+        <i class="fas fa-angle-right me-2"></i>IoT Eğitimleri
+      </button>
+      <div class="collapse" id="orders-collapse" style="">
+        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+          <li><a href="/html/videolar/iot.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded" style="padding-left: 1.5rem;"><i class="fas fa-play-circle me-2"></i>IoT'ye Giriş</a></li>
+          <li><a href="/html/videolar/akillisehirler.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded" style="padding-left: 1.5rem;"><i class="fas fa-play-circle me-2"></i>Akıllı Şehirler</a></li>
+          
+        </ul>
+      </div>
+    </li>
+    <li class="border-top my-3"></li>
+    
+
+  </ul>
+</div>
+</main>
+
+
+<!--Giriş bölümü-->
+
+<div class="container flex-grow-1 p-3"  > 
+  <h2 style="text-align: center;">Giriş Sayfası</h2> 
+  <p>Eğitim videoları hakkında kısa bilgilendirme. <br><br><h3>Blockchain Eğitimleri</h3>Bu eğitimde şunları şunları anlattık. ve ilerleyen zamanlarda şunları da anlatacağız... gibi<br><br><h3>Frontend Eğitimleri</h3> SAYFADA UZUN BİR YAZI OLMASI GEREKTİĞİ İÇİN BURAYI EKLİYORUM. ASIL AÇIKLAMADA BU YAZMAYACAK: <br> "HTML-5 ile Web Programlamaya Giriş" adlı temel bir HTML eğitimine hoş geldiniz! 
+    Bu eğitimde, web programlamaya başlamak için temel bir adım olan HTML-5'i öğreneceksiniz. 
+    HTML-5, web sayfalarını yapılandırmak ve içeriği biçimlendirmek için kullanılan standart bir işaretleme dilidir. Bu eğitimde, HTML-5'in temel öğelerini ve kullanımını adım adım öğreneceksiniz. <br><br>
+    Web geliştirme yolculuğunuza sağlam bir temelle başlamak için bu eğitim tam size göre! 
+    Eğer web programlamaya adım atmak ve HTML-5'i öğrenmek istiyorsanız, doğru yerdesiniz. 
+    <br><br>
+    Keyifli öğrenmeler dileriz! <br><br>
+    Bu eğitimde şunları şunları anlattık. ve ilerleyen zamanlarda şunları da anlatacağız... gibi<br><br><h3>IoT Eğitimleri</h3>Bu eğitimde şunları şunları anlattık. ve ilerleyen zamanlarda şunları da anlatacağız... gibi</p>
+
+</div>
+</div>
+
+
+
+
+
+
+
+<!--Footer-->
+
+
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+  <div class="col-md-4 d-flex align-items-center">
+    <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+      <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+    </a>
+    <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Blockchain and IoT</span>
+  </div>
+  <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+    <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/iau_blockchainandiot"><i class="bi bi-instagram"></i></a></li>
+    <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/company/iau-blockchain-and-iot"><i class="bi bi-linkedin"></i></a></li>
+    <li class="ms-3"><a class="text-body-secondary" href="https://twitter.com/Iaublockchain_?t="><i class="bi bi-twitter"></i></a></li>
+    <li class="ms-3"><a class="text-body-secondary" href="https://www.youtube.com/@BlockchainandIOT"><i class="bi bi-youtube"></i></a></li>
+  </ul>
+</footer>
+
 
 
 
@@ -118,6 +242,11 @@
           }
       });
   </script>
+
+<script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script src="sidebars.js"></script>
+
     
 </body>
 </html>
