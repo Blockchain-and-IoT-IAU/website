@@ -22,10 +22,48 @@
         }
         .gradient-background {
         background: linear-gradient(#fc8c03 10%, #fff 23%, #fff 10%);
-        
-    }
+        }
+      
     
-           
+    body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #fc8c03;
+        }
+        
+        h2 {
+            
+            color: #fc8c03;
+        }
+        p {
+            margin: 10px 0;
+            color: #ffffff;
+        }
+        .transparent-container {
+      background-color: rgba(255, 255, 255, 0.1); /* Beyaz renk, %50 şeffaf */
+    }
+    .gradient-background2 {
+  background: linear-gradient(to bottom right, #1c3c7c 10%, #90a3e0 75%, #fc8c03 100%);
+}
+.container.transparent-container {
+    margin-top: 0; 
+    padding-top: 0; 
+}
+
+      
     
       </style>
       </head>
@@ -95,46 +133,11 @@
 
 <!--Gövde-->
 
+<div class="gradient-background2">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biz Kimiz</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            text-align: center;
-            color: #fc8c03;
-        }
-        
-        h2 {
-            
-            color: #fc8c03;
-        }
-        p {
-            margin: 10px 0;
-        }
-      
-        
-    </style>
-</head>
-<body>
-  
-    <div class="container">
-        <h1>Biz Kimiz</h1>
+
+    <div class="container transparent-container">
+        <h1> <br> Biz Kimiz</h1>
         <p>Biz Blockchain and IoT Kulübü olarak,Blokzincir alanında kendimizi geliştirmeyi amaçlayan bir ekibiz.</p>
         <p>Edindiğimiz ve edineceğimiz bilgi birikimi ile bu alanda fark yaratan bir kulüp olmayı hedefliyoruz. Ekibimiz; yaratıcı, yenilikçi ve bu alanda fark yaratmayı isteyen kişilerden oluşmaktadır. Ayrıca her birimiz kulübe ve yaptığımız işlere büyük bir tutku ile bağlıyız.</p>
         
@@ -148,8 +151,8 @@
 
         
           
-              <div class="container">
-                <h2 style="text-align: center;">Ekibimiz</h2>
+              <div class="container transparent-container">
+                <h2 style="text-align: center;"> <br> Ekibimiz </h2>
                   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                       <div class="col"> <!--ADA-->
                           <div class="card shadow-sm" style="background-color: #fc8c03;">
@@ -351,10 +354,11 @@
 
 
 
+
 <!--Footer-->
 
 
-  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 ">
     <div class="col-md-4 d-flex align-items-center">
       <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
         <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
@@ -373,7 +377,7 @@
 
 
 
-
+</div>
 
 
 

@@ -22,8 +22,33 @@
         }
         .gradient-background {
         background: linear-gradient(#fc8c03 10%, #fff 23%, #fff 10%);
-        
-    }
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+           
+        }
+
+        .background-gradient {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .background-gradient svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .content {
+            
+            position: relative;
+            z-index: 1;
+        }
     
            
     
@@ -88,28 +113,101 @@
       </header>
     
     
-      <h1>üye ol sayfası</h1>
+      
 
 
 
 
-<!--  Google Form
-
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeZTzyW27YofvuSdRXTcdoRe5I19I3gzVuTqlJV2CSex5NmFw/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Yükleniyor…</iframe>
-
--->
 
 
   <!--Form Bölümü-->
-  <div class="album py-5 bg-body-tertiary">
-    <div class="container">
-      <div class="ratio ratio-16x9">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeZTzyW27YofvuSdRXTcdoRe5I19I3gzVuTqlJV2CSex5NmFw/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Yükleniyor…</iframe>
-      </div>
+  
+    <div class="background-gradient">
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="gradient1" x1="70%" y1="0%" x2="100%" y2="85%">
+            <stop offset="10%" style="stop-color:#1c3c7c" />
+            <stop offset="75%" style="stop-color:#90a3e0" />
+            <stop offset="100%" style="stop-color:#fc8c03" />
+          </linearGradient>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#gradient1)" />
+      </svg>
+      
     </div>
-  </div>
-   
+    
+      <div class="container">
+        <div class="p-2 mb-1 rounded-3" style="text-align: center;">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeZTzyW27YofvuSdRXTcdoRe5I19I3gzVuTqlJV2CSex5NmFw/viewform?embedded=true" style="width: 100%; height: 80vh; border: 0;">Yükleniyor…</iframe>
+        </div>
+      </div>
+      
+    
+        <!--Açıklama kutuları--> 
+      <div class="container-fluid">
 
+        
+        <div class="row align-items-md-stretch px-5 py-5 gradient-background" id="Featured-3">
+          <div class=" feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3" style="border-radius: 10%;">
+              <svg xmlns="http://www.w3.org/2000/svg" height="50" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+              </svg>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Nasıl Üye Olacağım?</h3>
+            <p>Yukarıda bulunan katılım anketimizi doldurmanız üyeliğiniz için yeterlidir. <br> Formun sonunda sizleri whatsapp grup linkimiz bekliyor. O link ile grubumuza katılabilirsiniz :)</p>
+            
+          </div>
+
+
+          <!--------------------->
+          <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3" style="border-radius: 10%;">
+              <svg xmlns="http://www.w3.org/2000/svg"  height="50" fill="currentColor" class="bi bi-question-lg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215 0 1.344-.665 2.288-1.79 2.973-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712 1.03-.632 1.397-1.135 1.397-2.028 0-.979-.758-1.698-1.926-1.698-1.009 0-1.71.529-1.938 1.402-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09 0-.618-.473-1.092-1.095-1.092-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14"/>
+              </svg>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Neden Seviye Formu Dolduruyorum?</h3>
+            <p>Bizler her seviyede olan üyelerimiz için eğitimler düzenlemekteyiz. Üyelerimizin seviyelerini belirlememiz açısından da katılım anketimizi doldurmanız oldukça önemli.</p>
+            
+          </div>
+          <!------------------------------>
+          <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3" style="border-radius: 10%;">
+              <svg xmlns="http://www.w3.org/2000/svg" height="50" fill="currentColor" class="bi bi-bar-chart-fill" viewBox="0 0 16 16">
+                <path d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z"/>
+              </svg>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Aldığım Puan Ne İşe Yarayacak?</h3>
+            <p>Sizler kendi puanlarınızı göremeseniz de bizler sizlerin aldığı puanlara göre sizleri seviye gruplarımıza almaktayız. Bu gruplarda hem kendi seviyenizdeki kişilerle birlikte gelişebilir hem de her grupta bulunan mantörlerimizden yardımlar alabilirsiniz.</p>
+            
+          </div>
+        </div>
+      </div>
+
+
+
+
+    
+
+  <!--Footer-->
+
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Blockchain and IoT</span>
+    </div>
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/iau_blockchainandiot"><i class="bi bi-instagram"></i></a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/company/iau-blockchain-and-iot"><i class="bi bi-linkedin"></i></a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="https://twitter.com/Iaublockchain_?t="><i class="bi bi-twitter"></i></a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="https://www.youtube.com/@BlockchainandIOT"><i class="bi bi-youtube"></i></a></li>
+    </ul>
+  </footer>
+</div>
 
 
 

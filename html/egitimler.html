@@ -25,6 +25,13 @@
         .gradient-background {
         background: linear-gradient(#fc8c03 10%, #fff 23%, #fff 10%);
         }
+        .gradient-background2 {
+        background: linear-gradient(to bottom right, #1c3c7c 10%, #90a3e0 75%, #fc8c03 100%);
+        }
+        .btn-toggle-nav a {
+    color: #fff !important;
+  }
+  
     
       </style>
 
@@ -91,6 +98,9 @@
     
     
 <!--Sidebar ve içerik-->
+<div class="gradient-background2">
+
+
 <div class="d-flex">
   
   <!--Sidebar-->
@@ -100,24 +110,24 @@
 <div class="flex-shrink-0 p-3" style="width: 280px;">
   <a href="/html/egitimler.html" class="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom">
     
-    <span class="fs-5 fw-semibold">Eğitim Videolarımız</span>
+    <span class="fs-5 fw-semibold" style="color: #fff;">Eğitim Videolarımız</span>
   </a>
   <ul class="list-unstyled ps-0">
     <li class="mb-1">
-      <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
-        <i class="fas fa-angle-right me-2"></i>Blockchain Eğitimleri   
+      <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false"  style="color: #fff;">
+        <i class="fas fa-angle-right me-2" style="color: #fff;"></i>Blockchain Eğitimleri   
       </button>
-      <div class="collapse" id="home-collapse" style="">
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-          <li><a href="/html/videolar/blockchainegiris.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded" style="padding-left: 1.5rem;"><i class="fas fa-play-circle me-2"></i>Blockchain'e Giriş</a></li>
-          <li><a href="/html/videolar/bilgi.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded" style="padding-left: 1.5rem;"><i class="fas fa-play-circle me-2"></i>Bilgi(Gösterge) İşleme Giriş</a></li>
-          <li><a href="/html/videolar/consensus.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded" style="padding-left: 1.5rem;"><i class="fas fa-play-circle me-2"></i>Consensus Algoritmaları</a></li>
+      <div class="collapse" id="home-collapse" style="color: #fff;">
+        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="color: #fff;">
+          <li style="color: #fff;"><a href="/html/videolar/blockchainegiris.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded" style="padding-left: 1.5rem; color: #fff;"><i class="fas fa-play-circle me-2" style="color: #fff;"></i>Blockchain'e Giriş</a></li>
+          <li><a href="/html/videolar/bilgi.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded" style="padding-left: 1.5rem; color: #fff;"><i class="fas fa-play-circle me-2" style="color: #fff;"></i>Bilgi(Gösterge) İşleme Giriş</a></li>
+          <li><a href="/html/videolar/consensus.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded" style="padding-left: 1.5rem; color: #fff;"><i class="fas fa-play-circle me-2" style="color: #fff;"></i>Consensus Algoritmaları</a></li>
           
         </ul>
       </div>
     </li>
     <li class="mb-1">
-      <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+      <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false" style="color: #fff;">
         <i class="fas fa-angle-right me-2"></i>Frontend  Eğitimleri
       </button>
       <div class="collapse" id="dashboard-collapse" style="">
@@ -128,7 +138,7 @@
    
 
           <!------------JavaScript-------------->
-          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false" style="color: #fff;">
             <i class="fas fa-angle-right me-2" style="padding-left: 1.5rem;"></i>JavaScript
           </button>
           <div class="collapse" id="account-collapse" style="">
@@ -157,7 +167,7 @@
       </div>
     </li>
     <li class="mb-1">
-      <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+      <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false" style="color: #fff;">
         <i class="fas fa-angle-right me-2"></i>IoT Eğitimleri
       </button>
       <div class="collapse" id="orders-collapse" style="">
@@ -179,19 +189,38 @@
 <!--Giriş bölümü-->
 
 <div class="container flex-grow-1 p-3"  > 
-  <h2 style="text-align: center;">Giriş Sayfası</h2> 
-  <p>Eğitim videoları hakkında kısa bilgilendirme. <br><br><h3>Blockchain Eğitimleri</h3>Bu eğitimde şunları şunları anlattık. ve ilerleyen zamanlarda şunları da anlatacağız... gibi<br><br><h3>Frontend Eğitimleri</h3> SAYFADA UZUN BİR YAZI OLMASI GEREKTİĞİ İÇİN BURAYI EKLİYORUM. ASIL AÇIKLAMADA BU YAZMAYACAK: <br> "HTML-5 ile Web Programlamaya Giriş" adlı temel bir HTML eğitimine hoş geldiniz! 
-    Bu eğitimde, web programlamaya başlamak için temel bir adım olan HTML-5'i öğreneceksiniz. 
-    HTML-5, web sayfalarını yapılandırmak ve içeriği biçimlendirmek için kullanılan standart bir işaretleme dilidir. Bu eğitimde, HTML-5'in temel öğelerini ve kullanımını adım adım öğreneceksiniz. <br><br>
-    Web geliştirme yolculuğunuza sağlam bir temelle başlamak için bu eğitim tam size göre! 
-    Eğer web programlamaya adım atmak ve HTML-5'i öğrenmek istiyorsanız, doğru yerdesiniz. 
+  <h2 style="text-align: center; color: #fff;">Eğitim Sayfamıza Hoşgeldiniz!</h2> 
+
+  <p style="color: #fff; text-align: center;"> <br>Bu sayfada sizler için yapmış olduğumuz bğtğn eğitimlerimize ulaşabilirsiniz. Solunuzdaki alandan eğitimlerimizi istediğiniz kategoriye göre seçip hemen öğrenmeye başlayabilirsiniz. <br> <br> İşte kategorilerimiz hakkında kısa bir bilgilendirme: 
+    
     <br><br>
-    Keyifli öğrenmeler dileriz! <br><br>
-    Bu eğitimde şunları şunları anlattık. ve ilerleyen zamanlarda şunları da anlatacağız... gibi<br><br><h3>IoT Eğitimleri</h3>Bu eğitimde şunları şunları anlattık. ve ilerleyen zamanlarda şunları da anlatacağız... gibi</p>
+  </p>
+
+    <h3 style="color: #fff;">Blockchain Eğitimleri</h3>
+
+    <p style="color: #fff;">
+    Bu eğitim kategorimizde sizlere blokzincirin ne olduğunu sıfırdan anlatıyoruz. Eğer bizleri yakından tanımak ve blokzincir dünyasına sağlam temellerle başlamak istiyorsanız bu bölüm tam size göre!
+    
+    <br><br>
+    </p>
+    
+    <h3 style="color: #fff;">Frontend Eğitimleri</h3>
+    
+    <p style="color: #fff;">En temelden başladığımız frontend eğitimimizde hızlı adımlarla ilerliyoruz!
+      Blokzincirle frontend'in ne ilgisi var diye düşünebilirsiniz belki. Aslında oldukça ilgili. Blokzincir, merkeziyetsi bir veritabanı. Bu veritabanını insanlara ulaştırmak için mutlaka bir afrontend'e ihtiyacımız var. HTML ve CSS işte tam da burada devreye girecek. 
+    <br><br>
+    Peki ya JavaScript? Elbette ki frontend'de de oldukça işimize yaracak, fakat daha da önemlisi akıllı kontrat yazarken de JavaScript kullanacağız. Birçoğunuzun bildiği üzere artık webde tesk coinlerine ulaşmak eskisi kadar kolay değil. İşte tam da bu yüzden bilgisayarımıza kuracağımız Ganache'ı kullanacağız. Burada da akıllı kontratlarımızı JavaScript ile yazabileceğiz. 
+    <br><br>
+    
+    </p>
+
+    <h3 style="color: #fff;">IoT Eğitimleri</h3>
+    <p style="color: #fff;">
+    IoT eğitimlerimizde nesnelerin dünyasını keşfediyoruz. En temelden IoT'nin ne olduğunu öğren,yoruz. Nesnelerin İnterneti'ni, kullanım alanlarından projelerine ve uygulamalarına kadar her şeyiyle yakından inceliyoruz.</p>
 
 </div>
-</div>
 
+</div>
 
 
 
@@ -201,23 +230,28 @@
 <!--Footer-->
 
 
-<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-  <div class="col-md-4 d-flex align-items-center">
-    <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-      <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-    </a>
-    <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Blockchain and IoT</span>
-  </div>
-  <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-    <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/iau_blockchainandiot"><i class="bi bi-instagram"></i></a></li>
-    <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/company/iau-blockchain-and-iot"><i class="bi bi-linkedin"></i></a></li>
-    <li class="ms-3"><a class="text-body-secondary" href="https://twitter.com/Iaublockchain_?t="><i class="bi bi-twitter"></i></a></li>
-    <li class="ms-3"><a class="text-body-secondary" href="https://www.youtube.com/@BlockchainandIOT"><i class="bi bi-youtube"></i></a></li>
-  </ul>
-</footer>
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Blockchain and IoT</span>
+    </div>
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/iau_blockchainandiot"><i class="bi bi-instagram"></i></a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/company/iau-blockchain-and-iot"><i class="bi bi-linkedin"></i></a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="https://twitter.com/Iaublockchain_?t="><i class="bi bi-twitter"></i></a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="https://www.youtube.com/@BlockchainandIOT"><i class="bi bi-youtube"></i></a></li>
+    </ul>
+  </footer>
+</div>
 
 
 
+
+
+</div>
 
 
 
